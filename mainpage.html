@@ -1,0 +1,55 @@
+<html>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+    </style>
+    <script src="./myscript.js"></script>
+    <body>
+        <h2> Cálculo de IMC </h2>
+        <h3> Tabela IMC:</h3>
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Menor que 18,5</th>
+                <th>Entre 18,5 e 24,9</th>
+                <th>Entre 25 e 29,9</th>
+                <th>Entre 30 e 39,9</th>
+                <th>Maior que 40</th>
+            </tr>
+            <tr>
+                <td>Classificação</td>
+                <td>Abaixo do peso</td>
+                <td>Normal</td>
+                <td>Sobrepeso</td>
+                <td>Obesidade</td>
+                <td>Obesidade Grave</td>
+            </tr>
+        </table>
+
+        <h3>Faça o seu cálculo:</h3>
+        <label for="iPeso">Insira seu peso: </label>
+        <input id="iPeso"> 
+        <p></p>
+        
+        <label for="iAltura">Insira sua altura: </label>
+        <input id="iAltura">
+        <p></p>
+
+        <button id="btnCalcularIMC" onclick="document.getElementById('txtResultado').innerHTML = calcular(document.getElementById('iPeso').value,document.getElementById('iAltura').value)"> Calcular </button>
+
+        <p id="txtResultado"> </p>
+        
+        
+
+    </body>
+</html>

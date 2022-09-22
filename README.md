@@ -1,4 +1,4 @@
 # Calculo-IMC
 Calculo IMC -  JS &amp; HTML
 
-Primeiros projetos em prática.
+Exemplo prático básico de integração HTML + JS.
